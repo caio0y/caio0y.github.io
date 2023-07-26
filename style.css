@@ -1,11 +1,41 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('./fonts/PixelOperator.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('./fonts/PixelOperator-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PixelSC';
+    src: url('./fonts/PixelOperatorSC.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'PixelSC';
+    src: url('./fonts/PixelOperatorSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0f052d;
     color: #5fc75d;
     margin: 0;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-family: 'Pixel', Verdana, Tahoma, sans-serif;
     margin-bottom: 20px;
 }
+
+/* Estilização da Barra de Menu */
 
 .barra {
     background-color: #203671;
@@ -25,6 +55,8 @@ body {
 
 .menu li {
     float: left;
+    font-family: 'PixelSC';
+    font-weight: bold;
 }
 
 .menu li a {
@@ -41,10 +73,18 @@ body {
     color: #203671;
 }
 
+/* Estilização do Conteúdo */
+
 h1 {
     padding-top: 30px;
     text-align: center;
     font-size: 38px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Pixel';
 }
 
 section {
@@ -66,6 +106,8 @@ span {
     color: #5fc75d;
 }
 
+/* Estilização do Formulário de Contato */
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -76,7 +118,7 @@ form {
 
 label {
     display: block;
-    font-size: 18px;
+    font-size: 22px;
     color: #5fc75d;
     margin-bottom: 5px;
 }
@@ -92,7 +134,8 @@ textarea {
     border: 3px solid #fff;
     margin-bottom: 15px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-family: 'Pixel', Verdana, Tahoma, sans-serif;
+    font-size: 20px;
     color: #0f052d;
 }
 
@@ -125,7 +168,9 @@ input[type="submit"] {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-family: 'PixelSC', Verdana, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
     background-color: #36868f;
     color: #203671;
     cursor: pointer;
@@ -136,12 +181,19 @@ input[type="submit"]:hover {
     background-color: #5fc75d;
 }
 
+/* Estilização dos créditos no rodapé */
+
 footer p {
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
     color: #36868f;
 }
 
 footer a {
     color: #5fc75d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #203671;
 }
