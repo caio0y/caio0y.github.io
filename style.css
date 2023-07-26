@@ -1,9 +1,45 @@
-header {
+nav {
     background-color: #203671;
     color: #36868f;
 }
 
 body{
     background-color: #0f052d;
+    margin: 20px;
     color: #5fc75d;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    text-align: justify;
+    color: #36868f;
+}
+
+small{
+    color: #203671;
+}
+
+span {
+    color: #5fc75d;
+}
+
+input {
+    height: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+input.enviar {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #36868f;
+    color: #203671;
+}
+
+input.enviar:hover{
+    background-color: #203671;
+    color: #36868f;;
 }
