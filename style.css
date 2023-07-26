@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #0f052d;
     color: #5fc75d;
     margin: 0;
@@ -23,11 +23,11 @@ body{
     justify-content: center;
 }
 
-.menu li{
+.menu li {
     float: left;
 }
 
-.menu li a{
+.menu li a {
     display: block;
     color: #36868f;
     text-align: center;
@@ -36,19 +36,21 @@ body{
     transition: background-color 0.5s, color 0.5s;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background-color: #36868f;
     color: #203671;
 }
 
-section, header {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px;
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 38px;
 }
 
-header{
-    margin-top: 40px;
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 p {
@@ -56,7 +58,7 @@ p {
     color: #36868f;
 }
 
-small{
+small {
     color: #203671;
 }
 
@@ -68,7 +70,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color:#203671;
+    background-color: #203671;
     border-radius: 10px;
 }
 
@@ -90,7 +92,7 @@ textarea {
     border: 3px solid #fff;
     margin-bottom: 15px;
     box-sizing: border-box;
-    font-size: 16px; 
+    font-size: 16px;
     color: #0f052d;
 }
 
@@ -112,7 +114,7 @@ textarea:focus {
     border-color: #5fc75d;
 }
 
-div.enviar{
+div.enviar {
     text-align: center;
 }
 
@@ -130,15 +132,16 @@ input[type="submit"] {
     transition: background-color 0.5s;
 }
 
-input[type="submit"]:hover{
-    background-color:#5fc75d;
+input[type="submit"]:hover {
+    background-color: #5fc75d;
 }
 
-footer p{
+footer p {
+    text-align: center;
     font-size: 10px;
     color: #36868f;
 }
 
-footer a{
+footer a {
     color: #5fc75d;
 }
