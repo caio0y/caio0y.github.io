@@ -25,17 +25,25 @@
 
 /* cores definidas em variáveis, possibilitando alterar a paleta de cores do site */
 :root {
-    --tom0: #CCC;
-    --tom1: #5FC75D;
-    --tom2: #36868F;
-    --tom3: #203671;
-    --tom4: #0F052D;
+    --cor0: #e2f3e4;
+    --cor1: #5FC75D;
+    --cor2: #36868F;
+    --cor3: #203671;
+    --cor4: #0F052D;
 }
+
+/* :root {
+    --cor0: #EEE;
+    --cor1: #52c33f;
+    --cor2: #252446;
+    --cor3: #254d70;
+    --cor4: #e2f3e4;
+} */
 
 /* estilização geral */
 ::selection {
     background: none;
-    color: var(--tom0);
+    color: var(--cor0);
 }
 
 * {
@@ -43,7 +51,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Pixel', Verdana, Tahoma, sans-serif;
-    /* border: 1px solid var(--tom0); */
+    /* border: 1px solid var(--cor0); */
 }
 
 html {
@@ -52,8 +60,8 @@ html {
 }
 
 body {
-    background-color: var(--tom4);
-    color: var(--tom1);
+    background-color: var(--cor4);
+    color: var(--cor1);
     margin: 40px 0px 20px 0px;
     font-size: 24px;
 }
@@ -61,16 +69,16 @@ body {
 p {
     margin: 45px 0px;
     text-align: justify;
-    color: var(--tom2);
+    color: var(--cor2);
 }
 
 a {
-    color: var(--tom1);
+    color: var(--cor1);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--tom3);
+    color: var(--cor3);
 }
 
 ul {
@@ -85,8 +93,8 @@ ul li {
 
 .barra {
     width: 100%;
-    background-color: var(--tom3);
-    color: var(--tom2);
+    background-color: var(--cor3);
+    color: var(--cor2);
     position: fixed;
     /* fixar no topo da pagina */
     top: 0;
@@ -107,14 +115,14 @@ ul li {
 
 .menu li a {
     display: block;
-    color: var(--tom2);
+    color: var(--cor2);
     padding: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .menu li a:hover {
-    background-color: var(--tom2);
-    color: var(--tom3);
+    background-color: var(--cor2);
+    color: var(--cor3);
 }
 
 /* Estilização do Conteúdo */
@@ -136,6 +144,10 @@ header svg {
     height: 48px;
 }
 
+header svg:hover{
+    fill: var(--cor1);
+}
+
 section {
     padding-top: 40px;
 }
@@ -143,14 +155,14 @@ section {
 /* Sobre mim */
 
 span {
-    color: var(--tom1);
+    color: var(--cor1);
 }
 
 /* Formação */
 
 h3 {
     font-weight: normal;
-    color: var(--tom2);
+    color: var(--cor2);
 }
 
 h3+p {
@@ -158,12 +170,12 @@ h3+p {
 }
 
 small {
-    color: var(--tom3);
+    color: var(--cor3);
 }
 
 svg {
     vertical-align: middle;
-    fill: var(--tom2);
+    fill: var(--cor2);
 }
 
 /* Portfolio */
@@ -180,7 +192,7 @@ svg {
     padding: 10px;
     flex: 1 1 256px;
     max-width: 100%;
-    border: 2px solid var(--tom2);
+    border: 2px solid var(--cor2);
     border-radius: 10px;
 }
 
@@ -205,10 +217,10 @@ svg {
 }
 
 .projetos li:hover {
-    border-color: var(--tom1);
+    border-color: var(--cor1);
 }
 
-.projetos img {
+.projetos img, .projetos video {
     width: 100%;
     height: auto;
 }
@@ -220,24 +232,24 @@ form {
     min-width: 250px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--tom3);
+    background-color: var(--cor3);
     border-radius: 10px;
 }
 
 input::selection,
 textarea::selection {
-    color: var(--tom2);
+    color: var(--cor2);
 }
 
 fieldset {
     padding: 20px;
-    border-color: var(--tom0);
+    border-color: var(--cor0);
 }
 
 label {
     display: block;
     font-size: 22px;
-    color: var(--tom1);
+    color: var(--cor1);
     margin-bottom: 5px;
 }
 
@@ -249,11 +261,11 @@ textarea {
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 15px;
-    background-color: var(--tom0);
-    border: 3px solid var(--tom0);
+    background-color: var(--cor0);
+    border: 3px solid var(--cor0);
     border-radius: 5px;
     font-size: 20px;
-    color: var(--tom4);
+    color: var(--cor4);
 }
 
 textarea {
@@ -271,7 +283,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
     outline: none;
-    border-color: var(--tom1);
+    border-color: var(--cor1);
 }
 
 input[type="submit"] {
@@ -284,20 +296,20 @@ input[type="submit"] {
     font-family: 'PixelSC', Verdana, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    color: var(--tom3);
-    background-color: var(--tom2);
+    color: var(--cor3);
+    background-color: var(--cor2);
     transition: background-color 0.5s;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: var(--tom1);
+    background-color: var(--cor1);
 }
 
 /* créditos no rodapé */
 
 footer {
-    color: var(--tom2);
+    color: var(--cor2);
     text-align: center;
     font-size: 16px;
     margin: 20px;
