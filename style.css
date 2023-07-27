@@ -47,7 +47,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /* rolagem suave ao clicar nos links */
+    scroll-behavior: smooth;
+    /* rolagem suave ao clicar nos links */
 }
 
 body {
@@ -80,7 +81,7 @@ ul li {
     display: inline;
 }
 
-ul li svg{
+ul li svg {
     width: 48px;
     height: 48px;
 }
@@ -91,13 +92,16 @@ ul li svg{
     width: 100%;
     background-color: var(--tom3);
     color: var(--tom2);
-    position: fixed; /* fixar no topo da pagina */
+    position: fixed;
+    /* fixar no topo da pagina */
     top: 0;
 }
 
 .menu {
-    display: flex; /* menu ficar no horizontal */
-    justify-content: center; /* centralizar menu na pagina */
+    display: flex;
+    /* menu ficar no horizontal */
+    justify-content: center;
+    /* centralizar menu na pagina */
 }
 
 .menu li {
@@ -131,7 +135,7 @@ main {
     padding: 0 40px;
 }
 
-section{
+section {
     padding-top: 40px;
 }
 
@@ -143,12 +147,12 @@ span {
 
 /* Formação */
 
-h3{
+h3 {
     font-weight: normal;
     color: var(--tom2);
 }
 
-h3 + p {
+h3+p {
     margin-top: 0px;
 }
 
@@ -172,7 +176,12 @@ form {
     border-radius: 10px;
 }
 
-fieldset{
+input::selection,
+textarea::selection {
+    color: var(--tom2);
+}
+
+fieldset {
     padding: 20px;
     border-color: var(--tom0);
 }
