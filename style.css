@@ -1,3 +1,4 @@
+/* fonte personalizada */
 @font-face {
     font-family: 'Pixel';
     src: url('./fonts/PixelOperator.ttf') format('truetype');
@@ -22,6 +23,7 @@
     font-weight: bold;
 }
 
+/* cores definidas em variáveis, possibilitando alterar a paleta de cores do site */
 :root {
     --tom0: #FFF;
     --tom1: #5FC75D;
@@ -30,10 +32,16 @@
     --tom4: #0F052D;
 }
 
+::selection {
+    background: none;
+    color: var(--tom0);
+}
+
 * {
     box-sizing: border-box;
 }
 
+/* rolagem suave ao clicar nos links */
 html {
     scroll-behavior: smooth;
 }
@@ -47,31 +55,43 @@ body {
     margin-bottom: 20px;
 }
 
-::selection {
-    background: none;
-    color: var(--tom0);
+p {
+    text-align: justify;
+    color: var(--tom2);
 }
+
+a {
+    color: var(--tom1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--tom3);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* Estilização da Barra de Menu */
 
 .barra {
-    background-color: var(--tom3);
-    color: var(--tom2);
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
+    background-color: var(--tom3);
+    color: var(--tom2);
 }
 
 .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
 .menu li {
-    float: left;
     font-family: 'PixelSC';
     font-weight: bold;
 }
@@ -81,7 +101,6 @@ body {
     color: var(--tom2);
     text-align: center;
     padding: 10px;
-    text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -92,27 +111,28 @@ body {
 
 /* Estilização do Conteúdo */
 
-h1 {
+header {
     padding-top: 30px;
     text-align: center;
     font-size: 38px;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Pixel';
-}
-
-section {
+main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-p {
-    text-align: justify;
+main section:not(:first-child){
+    padding-top: 50px;
+}
+
+h3{
+    margin-bottom: 0px; 
     color: var(--tom2);
+}
+
+h3 + p {
+    margin-top: 0px;
 }
 
 small {
@@ -139,7 +159,7 @@ svg {
 }
 
 .load {
-    animation: spin 3s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 /* Estilização do Formulário de Contato */
@@ -219,17 +239,16 @@ input[type="submit"]:hover {
 
 /* Estilização dos créditos no rodapé */
 
-footer p {
+footer {
+    color: var(--tom2);
     text-align: center;
     font-size: 16px;
-    color: var(--tom2);
 }
 
-footer a {
-    color: var(--tom1);
-    text-decoration: none;
+footer ul li{
+    display: inline;
 }
 
-footer a:hover {
-    color: var(--tom3);
+footer ul li:not(:last-child)::after {
+    content: " \2022 ";
 }
