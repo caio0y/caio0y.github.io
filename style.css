@@ -179,6 +179,7 @@ form {
 
 fieldset{
     padding: 20px;
+    border-color: var(--tom0);
 }
 
 label {
