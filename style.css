@@ -22,24 +22,41 @@
     font-weight: bold;
 }
 
+:root {
+    --tom0: #FFF;
+    --tom1: #5FC75D;
+    --tom2: #36868F;
+    --tom3: #203671;
+    --tom4: #0F052D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0f052d;
-    color: #5fc75d;
+    background-color: var(--tom4);
+    color: var(--tom1);
     margin: 0;
     font-size: 24px;
     font-family: 'Pixel', Verdana, Tahoma, sans-serif;
     margin-bottom: 20px;
 }
 
+::selection {
+    background: none;
+    color: var(--tom0);
+}
+
 /* Estilização da Barra de Menu */
 
 .barra {
-    background-color: #203671;
-    color: #36868f;
+    background-color: var(--tom3);
+    color: var(--tom2);
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,7 +78,7 @@ body {
 
 .menu li a {
     display: block;
-    color: #36868f;
+    color: var(--tom2);
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -69,8 +86,8 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #36868f;
-    color: #203671;
+    background-color: var(--tom2);
+    color: var(--tom3);
 }
 
 /* Estilização do Conteúdo */
@@ -95,20 +112,34 @@ section {
 
 p {
     text-align: justify;
-    color: #36868f;
+    color: var(--tom2);
 }
 
 small {
-    color: #203671;
+    color: var(--tom3);
 }
 
 span {
-    color: #5fc75d;
+    color: var(--tom1);
 }
 
-.icone {
-    width: 26px;
+svg {
     vertical-align: middle;
+    fill: var(--tom2);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.load {
+    animation: spin 3s linear infinite;
 }
 
 /* Estilização do Formulário de Contato */
@@ -117,14 +148,14 @@ form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #203671;
+    background-color: var(--tom3);
     border-radius: 10px;
 }
 
 label {
     display: block;
     font-size: 22px;
-    color: #5fc75d;
+    color: var(--tom1);
     margin-bottom: 5px;
 }
 
@@ -136,12 +167,12 @@ textarea {
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
-    border: 3px solid #fff;
+    border: 3px solid var(--tom0);
     margin-bottom: 15px;
     box-sizing: border-box;
     font-family: 'Pixel', Verdana, Tahoma, sans-serif;
     font-size: 20px;
-    color: #0f052d;
+    color: var(--tom4);
 }
 
 textarea {
@@ -159,7 +190,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
     outline: none;
-    border-color: #5fc75d;
+    border-color: var(--tom1);
 }
 
 div.enviar {
@@ -176,14 +207,14 @@ input[type="submit"] {
     font-family: 'PixelSC', Verdana, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    background-color: #36868f;
-    color: #203671;
+    background-color: var(--tom2);
+    color: var(--tom3);
     cursor: pointer;
     transition: background-color 0.5s;
 }
 
 input[type="submit"]:hover {
-    background-color: #5fc75d;
+    background-color: var(--tom1);
 }
 
 /* Estilização dos créditos no rodapé */
@@ -191,14 +222,14 @@ input[type="submit"]:hover {
 footer p {
     text-align: center;
     font-size: 16px;
-    color: #36868f;
+    color: var(--tom2);
 }
 
 footer a {
-    color: #5fc75d;
+    color: var(--tom1);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #203671;
+    color: var(--tom3);
 }
