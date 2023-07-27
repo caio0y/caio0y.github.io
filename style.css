@@ -161,20 +161,6 @@ svg {
     fill: var(--tom2);
 }
 
-/* animação do icone de carregamento */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.load {
-    animation: spin 4s linear infinite;
-}
 
 /* Formulário de Contato */
 
