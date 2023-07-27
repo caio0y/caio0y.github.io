@@ -43,7 +43,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Pixel', Verdana, Tahoma, sans-serif;
-    /* border: 1px solid var(--tom0);  */
+    /* border: 1px solid var(--tom0); */
 }
 
 html {
@@ -81,11 +81,6 @@ ul li {
     display: inline;
 }
 
-ul li svg {
-    width: 48px;
-    height: 48px;
-}
-
 /* Estilização da Barra de Menu */
 
 .barra {
@@ -102,6 +97,7 @@ ul li svg {
     /* menu ficar no horizontal */
     justify-content: center;
     /* centralizar menu na pagina */
+    text-align: center;
 }
 
 .menu li {
@@ -124,15 +120,20 @@ ul li svg {
 /* Estilização do Conteúdo */
 /* Parte geral */
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 header {
     text-align: center;
     font-size: 38px;
 }
 
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
+header svg {
+    width: 48px;
+    height: 48px;
 }
 
 section {
@@ -165,11 +166,58 @@ svg {
     fill: var(--tom2);
 }
 
+/* Portfolio */
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetos li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 256px;
+    max-width: 100%;
+    border: 2px solid var(--tom2);
+    border-radius: 10px;
+}
+
+.projetos h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+
+.projetos p {
+    margin: 5px 0;
+}
+
+.descricao {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.descricao2 {
+    font-size: 18px;
+}
+
+.projetos li:hover {
+    border-color: var(--tom1);
+}
+
+.projetos img {
+    width: 100%;
+    height: auto;
+}
 
 /* Formulário de Contato */
 
 form {
     max-width: 600px;
+    min-width: 250px;
     margin: 0 auto;
     padding: 20px;
     background-color: var(--tom3);
@@ -252,7 +300,7 @@ footer {
     color: var(--tom2);
     text-align: center;
     font-size: 16px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 footer ul li:not(:last-child)::after {
