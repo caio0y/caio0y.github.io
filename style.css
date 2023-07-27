@@ -39,6 +39,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* rolagem suave ao clicar nos links */
@@ -52,10 +54,10 @@ body {
     margin: 0;
     font-size: 24px;
     font-family: 'Pixel', Verdana, Tahoma, sans-serif;
-    margin-bottom: 20px;
 }
 
 p {
+    margin: 45px 0px;
     text-align: justify;
     color: var(--tom2);
 }
@@ -112,7 +114,7 @@ ul {
 /* Estilização do Conteúdo */
 
 header {
-    padding-top: 30px;
+    margin-top: 60px;
     text-align: center;
     font-size: 38px;
 }
@@ -127,6 +129,7 @@ main section:not(:first-child){
 }
 
 h3{
+    font-weight: normal;
     margin-bottom: 0px; 
     color: var(--tom2);
 }
@@ -170,6 +173,10 @@ form {
     padding: 20px;
     background-color: var(--tom3);
     border-radius: 10px;
+}
+
+fieldset{
+    padding: 20px;
 }
 
 label {
@@ -243,6 +250,7 @@ footer {
     color: var(--tom2);
     text-align: center;
     font-size: 16px;
+    margin: 20px 0;
 }
 
 footer ul li{
