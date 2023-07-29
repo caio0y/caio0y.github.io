@@ -351,7 +351,7 @@ footer ul li:not(:last-child)::after {
 
 /* Responsividade */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     /* desativa grid */
     .projetos {
@@ -363,7 +363,7 @@ footer ul li:not(:last-child)::after {
     }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
     main {
         padding: 0 20px;
     }
@@ -391,7 +391,7 @@ footer ul li:not(:last-child)::after {
     }
 }
 
-@media (max-height: 380px) {
+@media screen and (max-height: 380px) {
 
     .projetos img,
     .projetos video {
