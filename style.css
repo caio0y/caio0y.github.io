@@ -138,6 +138,7 @@ header svg {
     position: fixed;
     top: 0;
     z-index: 100;
+    box-shadow: 0px 1px 5px var(--cor4);
 }
 
 .menu {
