@@ -228,7 +228,7 @@ section {
     text-align: center;
 }
 
-.projetos article:first-child {
+.projetos article:nth-child(1) {
     grid-column: 1 / span 2;
 }
 
