@@ -195,6 +195,20 @@ section {
     margin: 20px 0px;
 }
 
+#curriculum {
+    font-size: 1.15rem;
+    vertical-align:middle;
+}
+
+#curriculum a {
+    color: var(--cor3);
+}
+
+#curriculum a:hover {
+    color: var(--cor2);
+}
+
+
 /* Formação */
 #formacao article {
     margin: 20px 0px;
