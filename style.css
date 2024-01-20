@@ -228,9 +228,11 @@ section {
     text-align: center;
 }
 
+/*
 .projetos article:nth-child(1) {
     grid-column: 1 / span 2;
 }
+*/
 
 .projetos article:hover {
     border-color: var(--cor1);
